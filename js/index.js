@@ -9,7 +9,10 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+const title = "The Hobbit";
+const author = "J.R.R. Tolkien";
+let rating = "4.3";
+let copiesSold = "100000000";
 // --^-- write your code here --^--
 
 /*
@@ -26,6 +29,11 @@ Then log all variables to the console again.
 
 // --v-- write your code here --v--
 
+/* console.log("Title: " + title);
+console.log("Author: " + author);
+console.log("Rating (from goodreads.com): " + rating);
+console.log("Copies sold worldwide: " + copiesSold); */
+
 // --^-- write your code here --^--
 
 /*
@@ -38,4 +46,22 @@ Then log all variables to the console again.
 
 // --v-- write your code here --v--
 
+function logBookData(title, author, rating, copiesSold) {
+  console.log("Title: " + title);
+  console.log("Author: " + author);
+  console.log("Rating (from goodreads.com): " + rating);
+  console.log("Copies sold worldwide: " + copiesSold);
+}
 // --^-- write your code here --^--
+logBookData(title, author, rating, copiesSold);
+
+rating--;
+copiesSold *= 2;
+
+logBookData(title, author, rating, copiesSold);
+
+copiesSold += 2000000;
+logBookData(title, author, rating, copiesSold);
+
+copiesSold += 1;
+logBookData(title, author, rating, copiesSold);
